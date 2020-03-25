@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+const   handleError = () => {
+throw new Error('you got an error');
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +23,8 @@ function App() {
         >
           Learn React
         </a>
+        <h5>Github actions are defined here</h5>
+        <button onClick={() => handleError()}>Cause an error</button>
       </header>
     </div>
   );

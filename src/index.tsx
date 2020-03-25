@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import LogRocket from 'logrocket';
+import setupLogRocketReact from 'logrocket-react';
+
+LogRocket.init('xirvnf/firebase-test');
+setupLogRocketReact(LogRocket);
 
 ReactDOM.render(
   <React.StrictMode>
