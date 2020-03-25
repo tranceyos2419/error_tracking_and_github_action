@@ -24,6 +24,8 @@ throw new Error('you got an error');
           Learn React
         </a>
         <h5>Github actions are defined here</h5>
+
+  <p>{process.env.REACT_APP_FIREBASE_API}</p>
         <button onClick={() => handleError()}>Cause an error</button>
       </header>
     </div>
